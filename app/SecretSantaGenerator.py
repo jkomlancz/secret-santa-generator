@@ -1,8 +1,16 @@
 import random
+import os
 
 
 def randomize():
-    cup = ["Jani", "Mate", "Krisz"]
+    os.system("clear")
+    player_num = int(input("How many player wanna play? (Max 3)"))
+    cup = []
+    for i in range(player_num):
+        os.system("clear")
+        print(" Write the name of player No.", i+1)
+        name = input()
+        cup.append(name)
 
     p1 = random.choice(cup)
     p2 = random.choice(cup)
@@ -21,19 +29,20 @@ def randomize():
         g1 = random.choice(cup)
         g2 = random.choice(cup)
         g3 = random.choice(cup)
+    os.system("clear")
     print("\nSECRET SANTA GENERATOR:\n")
-    print(p1, "paraszt", g1, "parasztot, es kedveset huzta\n")
-    print(p2, "paraszt", g2, "parasztot, es kedveset huzta\n")
-    print(p3, "paraszt", g3, "parasztot, es kedveset huzta\n")
+    print(p1, "paros", g1, "parost huzta\n")
+    print(p2, "paros", g2, "parost huzta\n")
+    print(p3, "paros", g3, "parost huzta\n")
 
     if g1 == "Krisz":
-        print("Aztan fasza ajandek legyen", p1, "\n")
+        print("Aztán fasza ajándék legyen", p1, "\n")
     elif g2 == "Krisz":
-        print("Aztan fasza ajandek legyen", p2, "\n")
+        print("Aztán fasza ajándék legyen", p2, "\n")
     elif g3 == "Krisz":
-        print("Aztan fasza ajandek legyen", p3, "\n")
+        print("Aztán fasza ajándék legyen", p3, "\n")
 
-    print("BOLDOG KARACSONYT!")
+    print("BOLDOG KARÁCSONYT!")
 
 
 randomize()

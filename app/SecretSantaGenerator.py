@@ -2,7 +2,7 @@ import random
 
 
 def randomize():
-    cup = ["Jani", "Máté", "Krisz"]
+    cup = ["Jani", "Mate", "Krisz"]
 
     p1 = random.choice(cup)
     p2 = random.choice(cup)
@@ -22,18 +22,18 @@ def randomize():
         g2 = random.choice(cup)
         g3 = random.choice(cup)
     print("\nSECRET SANTA GENERATOR:\n")
-    print(p1, "paraszt", g1, "parasztot, és kedvesét húzta\n")
-    print(p2, "paraszt", g2, "parasztot, és kedvesét húzta\n")
-    print(p3, "paraszt", g3, "parasztot, és kedvesét húzta\n")
+    print(p1, "paraszt", g1, "parasztot, es kedveset huzta\n")
+    print(p2, "paraszt", g2, "parasztot, es kedveset huzta\n")
+    print(p3, "paraszt", g3, "parasztot, es kedveset huzta\n")
 
     if g1 == "Krisz":
-        print("Aztán fasza ajándék legyen", p1, "\n")
+        print("Aztan fasza ajandek legyen", p1, "\n")
     elif g2 == "Krisz":
-        print("Aztán fasza ajándék legyen", p2, "\n")
+        print("Aztan fasza ajandek legyen", p2, "\n")
     elif g3 == "Krisz":
-        print("Aztán fasza ajándék legyen", p3, "\n")
+        print("Aztan fasza ajandek legyen", p3, "\n")
 
-    print("BOLDOG KARÁCSONYT!")
+    print("BOLDOG KARACSONYT!")
 
 
 randomize()

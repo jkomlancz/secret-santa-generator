@@ -3,7 +3,7 @@ import random
 
 def get_input():
 
-    return input('Hányan vesztek rész a sorsolásban? ')
+    return input('Hányan vesztek rész a sorsolásban? (Min. 2) ')
 
 
 def raffle(player_list):
@@ -36,9 +36,9 @@ def get_players():
     num_of_members = 0
     isnumeric = False
 
-    while not isnumeric or int(num_of_members) <= 0:
+    while not isnumeric or int(num_of_members) <= 1:
         print('-------------------------------------')
-        print('Kérlek 0-nál nagyobb számot adj meg!')
+        print('Kérlek 1-nél nagyobb számot adj meg!')
         print('-------------------------------------')
 
         num_of_members = get_input()

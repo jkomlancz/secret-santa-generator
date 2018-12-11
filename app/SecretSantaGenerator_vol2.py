@@ -54,3 +54,4 @@ def run():
     players = get_players()
     raffle(players)
 
+run()

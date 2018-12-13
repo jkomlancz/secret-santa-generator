@@ -2,15 +2,15 @@ import random
 import os
 import time
 
-
-def names_input():
+def number_player():
     os.system("clear")
     try:
         player_num = int(input("How many player wanna play? (Max 3)"))
     except ValueError:
         print("Szamot adjal meg teso")
         time.sleep(2)
-        names_input()
+        number_player()
+
     cup = []
     for i in range(player_num):
         os.system("clear")
@@ -33,11 +33,6 @@ def names_input():
         p1 = random.choice(cup)
         p2 = random.choice(cup)
         p3 = random.choice(cup)
-
-        if p1 == p2 or p2 == p3 or p1 == p3:
-            print("Hasznalj beceneveket")
-            time.sleep(2)
-            names_input()
 
         while p1 == p2 or p2 == p3 or p1 == p3:
             p1 = random.choice(cup)
@@ -69,7 +64,7 @@ def names_input():
 
 
 def main():
-    names_input()
+    number_player()
 
 
 if __name__ == "__main__":

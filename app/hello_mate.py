@@ -1,6 +1,8 @@
-num1 = int(input())
-num2 = int(input())
+
+
+num1 = int(input("Ajd meg egy szamot\n"))
+num2 = int(input("Ajd meg egy masik szamot\n"))
 
 sum = num1 + num2
 
-print(sum)
+print( "Az eredmeny: ",sum)

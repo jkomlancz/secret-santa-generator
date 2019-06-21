@@ -11,7 +11,7 @@ Legyen telepítve Python3 a gépre, szükséges a futtatáshoz.
 
 Terminálből futtatható alkalmazás, amelynek induláskor előre meg kell adni, hogy hány személy nevét szeretnénk a random generáláshoz használni (ez jelenleg nem egy név lesz, hanem párok nevei), majd ennek a számnak megfelelő mennyiségű nevet kérjen be.
 
-Test for API
+NA MOST
 
 ***Például:***
 ```
